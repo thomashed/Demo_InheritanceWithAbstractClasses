@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary
 {
-    public class SqliteDataAccess : IDataAccess
+    public class SqliteDataAccess : DataAccess
     {
-        public string LoadConnectionString(string name)
-        {
-            Console.WriteLine("Load Connection String");
-            return "testConnectionString";
-        }
 
         public void LoadData(string sql)
         {

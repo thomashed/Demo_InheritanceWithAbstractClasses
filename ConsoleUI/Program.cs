@@ -14,19 +14,19 @@ namespace ConsoleUI
             Console.WriteLine("Start of application, press ENTER to continue");
             Console.ReadLine();
 
-            List<IDataAccess> databases = new List<IDataAccess>()
-            {
-                new SqlDataAccess(),
-                new SqliteDataAccess()
-            };
+            //List<IDataAccess> databases = new List<IDataAccess>()
+            //{
+            //    new SqlDataAccess(),
+            //    new SqliteDataAccess()
+            //};
 
-            foreach (var db in databases)
-            {
-                db.LoadConnectionString("demo");
-                db.LoadData("select * from table");
-                db.SaveData("insert into table");
-                Console.WriteLine();
-            }
+            //foreach (var db in databases)
+            //{
+            //    db.LoadConnectionString("demo");
+            //    db.LoadData("select * from table");
+            //    db.SaveData("insert into table");
+            //    Console.WriteLine();
+            //}
 
             Console.ReadLine();
         }
