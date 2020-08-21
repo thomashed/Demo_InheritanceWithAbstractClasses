@@ -9,12 +9,12 @@ namespace DemoLibrary
     public class SqliteDataAccess : DataAccess
     {
 
-        public void LoadData(string sql)
+        public override void LoadData(string sql)
         {
             Console.WriteLine("Loading SQLite Data");
         }
 
-        public void SaveData(string sql)
+        public override void SaveData(string sql)
         {
             Console.WriteLine("Saving data to SQLite");
         }
