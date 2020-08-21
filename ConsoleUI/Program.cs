@@ -11,6 +11,9 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Start of application, press ENTER to continue");
+            Console.ReadLine();
+
             List<IDataAccess> databases = new List<IDataAccess>()
             {
                 new SqlDataAccess(),
