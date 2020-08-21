@@ -8,7 +8,7 @@ namespace DemoLibrary
 {
     public abstract class DataAccess
     {
-        public string LoadConnectionString(string name)
+        public virtual string LoadConnectionString(string name)
         {
             Console.WriteLine("Load Connection String");
             return "testConnectionString";
